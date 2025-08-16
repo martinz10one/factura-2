@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+   background-color: white;
+    max-width: 1000px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+.top-bar {
+  background: #eee;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.main-header {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1e4b8d;
+  font-size: 28px;
+}
+
+.logo span {
+  color: rgb(80, 78, 78);
+}
+
+.navbar {
+  background: #1e4b8d;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+
+ 
+
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+ 
+
+
+}
+ .navbar_1{
+    background: orange;
+    padding: 0px;
+    ;
+    
+    
+
+ }
+.hero {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero img {
+  width: 350px;
+  height: 250px;
+  margin-right: 35px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  color: #1e4b8d;
+}
+
+.hero-text span {
+  color: #666;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+ 
+ 
+
+
+h2{
+
+font-size: 15px;
+
+
+}
+
+.products img {
+  width: 20%;
+  height: 20%;
+  display: flex;
+  
+  margin-left: 10px;
+
+
+ 
+}
+
+ .info {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+
+}
+
+
+.productos {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 40px;
+}
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+  grid-row: 1/5;
+  max-width: 300px;
+  width: 100%;
+}
+.lateral__cabecera {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.lateral__productos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  
+}
+.lateral article {
+  display: flex;
+  gap: 12px;
+}
+.lateral article img {
+  width: 50px;
+  height: auto;
+  border: 1px solid
+}
+.lateral article .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.categorias {
+  
+  display: flex;
+  gap: 50px;
+  padding: 5px;
+  width: 100%;
+   justify-content: center;
+
+}
+.categorias__item {
+
+  height: auto;
+  border: 1px solid rgb(198, 197, 197);
+  display: flex;
+  gap: 10px;
+}
+
+.categorias img{
+width: 60px;
+height: 50px;
+
+  
+}
+
+.herramientas {
+  
+  grid-row: 3/5;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.herramientas__item {
+  width: 140px;
+  height: 200px;
+   border: 1px solid rgb(198, 197, 197);
+}
+.herramientas img {
+  width: 90%;
+  height: 100px;
+
+}
+.banner {
+  width: 100%;
+  height: 75%;
+  background-color: green;
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+.banner img {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  object-fit: cover;
+
+ 
+}
+
+.testimonios {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+
+}
+.testimonios div {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+ 
+}
+.testimonios img {
+  width: 20%;
+  height: 40%;
+  object-fit: cover;
+  border: 1px solid rgb(198, 197, 197);
+ 
+ 
+}
+
+.testimonio span {
+  color: #000000;
+}
+
+
+p.testimonio {
+
+  font-style: italic;
+  color: #666;
+  display: grid;
+}
+
+
+.marcas {
+  
+  height: 70px;
+  display: flex;
+  grid-column: 1/3;
+   border: 1px solid rgb(198, 197, 197);
+ 
+
+
+
+ 
+ 
+}/*# sourceMappingURL=styles.css.map */
+
+.filter  {
+
+  background: none;
+  color: #000000;
+  font-size: 18px;
+  height: 50px;
+  border-bottom: 2px solid #ccc;
+ 
+}
+
+.linea {
+display: flex;
+border-bottom: 2px solid rgb(138, 129, 129);
+margin-top: 30px;
+ 
+
+}
