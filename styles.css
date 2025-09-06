@@ -29,12 +29,25 @@ body {
   font-size: 14px;
 }
 
+
 .main-header {
   background: #fff;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+ 
   align-items: center;
+}
+.main-header img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.main-header input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  margin-left: 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .logo {
@@ -48,9 +61,10 @@ body {
 
 .navbar {
   background: #1e4b8d;
+
   display: flex;
-  justify-content: space-around;
-  margin-left: 5%;
+ gap: 20px;
+  margin-left: 4%;
   margin-right: 5%;
 
  
@@ -60,15 +74,18 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
+  padding: 5px 10px;
+
  
 
 
 }
  .navbar_1{
-    background: orange;
-    padding: 0px;
-    ;
-    
+    background: rgb(255, 217, 0);
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+   
     
 
  }
@@ -79,30 +96,41 @@ body {
   padding: 40px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.hero-text {
+  margin-right: 20px;
+  margin-left: 30px;
+  padding: 0%;
+}
 
 .hero img {
-  width: 350px;
-  height: 250px;
-  margin-right: 35px;
+  width: 450px;
+  height: 280px;
+  padding: 0%;
+  
 }
 
 .hero-text h2 {
   font-size: 32px;
   color: #1e4b8d;
 }
+.hero-text p{
+  font-size: 18px;
+  color: #666;
+}
 
 .hero-text span {
-  color: #666;
+  color: #496690;
+
 }
 
 .hero-text .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
-  background: orange;
-  color: #fff;
+  padding: 4px 30px;
+  background: rgb(255, 217, 0);
+  color: #1f3ea4;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
  
@@ -162,7 +190,7 @@ font-size: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 40px 10px;
   width: 100%;
   
 }
@@ -173,17 +201,30 @@ font-size: 15px;
 .lateral article img {
   width: 50px;
   height: auto;
-  border: 1px solid
+  border: 0.5px solid gray;
 }
 .lateral article .info {
   display: flex;
   flex-direction: column;
 }
+.lateral__productos p {
+  font-size: 14px;
+   color: #1e4b8d;
+  
+}
+.lateral__productos a {
+  font-size: 12px;
+  color: #000000;
+}
+.estrella {
+  color: gold;
+  
+}
 
 .categorias {
   
   display: flex;
-  gap: 50px;
+  gap: 20px;
   padding: 5px;
   width: 100%;
    justify-content: center;
@@ -194,15 +235,18 @@ font-size: 15px;
   height: auto;
   border: 1px solid rgb(198, 197, 197);
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
+
+
 .categorias img{
+margin: 0%;
 width: 60px;
 height: 50px;
 
-  
 }
+
 
 .herramientas {
   
@@ -221,13 +265,29 @@ height: 50px;
   height: 100px;
 
 }
-.banner {
-  width: 100%;
-  height: 75%;
-  background-color: green;
-  grid-row: 5/6;
-  grid-column: 1/2;
+.herramientas__item span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: gold;
 }
+.herramientas__item p {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+   color: #1e4b8d;
+ 
+}
+.herramientas__item a {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+
 .banner img {
   width: 60%;
   height: 60%;
@@ -271,20 +331,7 @@ p.testimonio {
   display: grid;
 }
 
-
-.marcas {
-  
-  height: 70px;
-  display: flex;
-  grid-column: 1/3;
-   border: 1px solid rgb(198, 197, 197);
- 
-
-
-
- 
- 
-}/*# sourceMappingURL=styles.css.map */
+ /*# sourceMappingURL=styles.css.map */
 
 .filter  {
 
@@ -293,13 +340,60 @@ p.testimonio {
   font-size: 18px;
   height: 50px;
   border-bottom: 2px solid #ccc;
+  
+
+  
+ 
  
 }
+.filter_products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+.filter_products  .flecha {
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(198, 197, 197);
+  justify-content: center;
+  
+  
 
+}
 .linea {
 display: flex;
 border-bottom: 2px solid rgb(138, 129, 129);
 margin-top: 30px;
- 
+}
 
+
+.marcas {
+  
+  height: 70px;
+  grid-column: 1/3;
+  border: 1px solid rgb(198, 197, 197);
+  justify-content: space-between;
+  gap: 100px;
+  
+  
+}
+
+
+.marcas .imagenes {
+
+
+  width: 45%;
+  height: 300%;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: auto;
+ 
+  
+  
+  
+  
+ 
 }
