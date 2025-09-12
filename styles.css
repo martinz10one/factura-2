@@ -67,6 +67,7 @@ body {
   display: flex;
   margin-left: 15px;
   align-items: center;
+  
 }
 .main-header img{
   width: 50px;
@@ -82,6 +83,12 @@ body {
   border-radius: 5px;
 }
 
+.main-header .cart {
+  
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   color: #1e4b8d;
@@ -484,9 +491,10 @@ margin-left: 20px;
   border: 1px solid rgb(198, 197, 197);
   background: #fff;
   margin-right: 20px;
-  margin-left: 20px;
-  height: 100px; /* Permite que se adapte al contenido */
   
+  height: 100px;
+   /* Permite que se adapte al contenido */
+ 
 }
 
 .marcas .imagenes {
@@ -596,3 +604,11 @@ margin-left: 20px;
   height: 30px;
 }
 
+.flechas {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
