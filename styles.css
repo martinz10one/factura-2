@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1;
 }
 .container {
    background-color: white;
-    max-width: 80%;
+    max-width: 70%;
     width: 100%;
     margin: 40px auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -22,6 +23,35 @@ body {
   background: #f4f4f4;
 }
 
+.factura-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  overflow-x: auto; 
+  box-sizing: border-box;
+}
+
+.categorias,
+.herramientas,
+.testimonios,
+.marcas {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.marcas .imagenes {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+
 .top-bar {
   background: #eee;
   padding: 10px 20px;
@@ -35,7 +65,7 @@ body {
   background: #fff;
   padding: 20px;
   display: flex;
- 
+  margin-left: 15px;
   align-items: center;
 }
 .main-header img{
@@ -138,12 +168,6 @@ body {
   border-radius: 10px;
 }
 
- 
-
-
-
-
-
 
 .products img {
   width: 20%;
@@ -168,7 +192,7 @@ body {
 .productos {
   display: grid;
   grid-template-columns: 300px auto;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(1fr, 1fr);
   gap: 20px;
   width: 100%;
   padding:  20px 20px 0px 20px;
@@ -183,6 +207,7 @@ body {
   max-width: 300px;
   width: 100%;
   margin-left: 20px;
+  
 }
 .lateral__cabecera {
   padding: 10px;
@@ -224,21 +249,16 @@ body {
 }
 
 .categorias {
-  
   display: flex;
-  gap: 20px;
-  padding: 5px;
-  width: 100%;
-  justify-content: center;
   margin-left: 10px;
-
+  column-gap: 20px;
 }
-.categorias__item {
 
-  height: auto;
+.categorias__item {
   border: 1px solid rgb(198, 197, 197);
   display: flex;
   gap: 15px;
+  padding: 5px 10px 5px 0;
 }
 
 .categorias img{
@@ -249,17 +269,25 @@ height: 80px;
 }
 .categorias__item span {
   font-size: 28px;
+  line-height: 20px;
   font-weight: bold;
   color: #1d447c;
  
+}
+
+.categorias__item__link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  p{
+    line-height: 28px;
+  }
 }
 .categorias__item a {
   font-size: 25px;
   color: #063774;
   display: flex;
-  justify-content: center;
-
-  
 
 }
 
@@ -269,9 +297,10 @@ height: 80px;
   
   grid-row: 3/5;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
-  margin-left: 15px;
+  margin-left: 30px;
+  margin-right: 0px;
 
 }
 .herramientas__item {
@@ -316,10 +345,16 @@ height: 80px;
   align-items: center;
   border: 1px solid rgb(198, 197, 197);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  padding: 10px;
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 .banner img {
-  width: 70%;
-  height: 20%;
+  width: 50%;
+  height: auto;
   display: flex;
   object-fit: cover;
 
@@ -329,11 +364,15 @@ height: 80px;
   font-weight: 900;
   color: #1e4b8d;
 }
-.banner a {
+.banner p {
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 400;
    color: #1e4b8d;
-  margin-left: 10px;
+}
+.banner i {
+  font-size: 14px;
+  font-weight: 400;
+   color: #1c1d1e;
 }
 
 
@@ -431,7 +470,7 @@ margin-top: 30px;
   margin-right: 20px;
   margin-left: 20px;
   height: 100px; /* Permite que se adapte al contenido */
-  margin-top: 30px;
+  
 }
 
 .marcas .imagenes {
@@ -460,7 +499,7 @@ margin-top: 30px;
 .footer {
   background-color: #ffffff;
   color: #151515;
-  padding: 40px 0px 20px;
+  
   font-size: 14px;
 }
 
@@ -541,13 +580,3 @@ margin-top: 30px;
   height: 30px;
 }
 
-@media (max-width: 1390px) {
-    .container {
-        
-        max-width: 100%;
-        width: 100%;
-        margin: 40px auto;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        display: flex;
-    }
-  }
