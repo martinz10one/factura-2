@@ -37,23 +37,12 @@ body {
 .categorias,
 .herramientas,
 .testimonios,
-.marcas {
-  box-sizing: border-box;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
 
-.marcas .imagenes {
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 100%;
-  overflow: hidden;
-}
+
 
 
 .top-bar {
-  background: #eee;
+
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -485,38 +474,38 @@ margin-left: 20px;
 
 
 .marcas {
-  display: grid;
-  grid-template-columns: repeat(1fr, 1fr);
-  grid-column: 1/3;
-  border: 1px solid rgb(198, 197, 197);
-  background: #fff;
-  margin-right: 20px;
-  
-  height: 100px;
-   /* Permite que se adapte al contenido */
- 
+    display: grid;
+    grid-template-columns: 1.5% 97% 1.5%;
+    border: 1px solid #E0E0E0;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flecha3{
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.flecha4{
+    border: 1px solid #E0E0E0;
+    justify-content: center;
 }
 
-.marcas .imagenes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px; /* Espacio entre imágenes */
-  width: 100%;
- 
+.imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
-.marcas .imagenes img {
-  width: 80px;
-  height: 50px;
-  object-fit: contain;
-  border: none;
-  background: transparent;
-  margin: 0;
-  padding: 0;
+.imagenes img {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
 }
-
-
 
 
 
