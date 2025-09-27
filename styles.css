@@ -240,7 +240,7 @@ body {
 .categorias {
   display: flex;
   margin-left: 30px;
-  column-gap: 20%;
+  column-gap: 10%;
 }
 
 .categorias__item {
@@ -286,8 +286,7 @@ height: 80px;
   
   grid-row: 3/5;
   display: flex;
-  gap: 30px;
-  width: 100%;
+  gap: 60px;
   margin: 30px 0px 0px 20px;
  
 
@@ -741,8 +740,7 @@ margin-left: 20px;
     padding: 4px;
   }
   .banner img {
-    width: 80%;
-    height: auto;
+   display: none;
   }
   .banner span,
   .banner p {
@@ -912,7 +910,7 @@ margin-left: 20px;
     padding: 4px;
   }
   .banner img {
-    width: 40%;
+    display: none;
   }
   .banner span,
   .banner p {
@@ -938,164 +936,30 @@ margin-left: 20px;
 
 
 
-@media (min-width: 700px) and (max-width: 1220px) {
-
-
+@media (min-width: 700px) and (max-width: 1420px) {
 
 
   
-
-  .main-header img {
-    width: 40px;
-    height: 40px;
-  }
-  .main-header input[type="text"] {
-    width: 100%;
-    margin-left: 0;
-    font-size: 14px;
-    padding: 4px;
-  }
-  .navbar {
-    
-    gap: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 1em;
-  }
-  .navbar a {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-  .hero {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0 0 10px;
-    box-shadow: none;
-  }
-  .hero img {
-    width: 90%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .hero-text {
-    margin: 0;
-    padding: 0;
-  }
-  .hero-text h2 {
-    font-size: 24px;
-  }
-  .hero-text p,
-  .hero-text span {
-    font-size: 14px;
-  }
-  .hero-text .btn {
-    padding: 4px 16px;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  .productos {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-  .lateral {
-    max-width: 100vw;
-    margin-left: 0;
-    padding: 10px;
-    border: none;
-  }
-  .lateral__cabecera,
-  .herramientas,
-  .marcas,
-  .lateral__productos {
+  
+  .categorias,
+  .marcas
+   {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 10px;
     padding: 8px;
-   
+    column-gap: 15px;
     max-height: none;
     overflow-x: auto;
     overflow-y: hidden;
-   
-  }
- 
-
-
-
-  .lateral article {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 100px;
-  }
-  .lateral article img,
-  .categorias img,
-  .herramientas img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-  }
-  .lateral__productos p,
-  .lateral__productos a {
-    font-size: 12px;
-  }
-  .categorias__item,
-  .herramientas__item {
-    flex: 0 0 auto;
-    min-width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 4px;
-  }
-  .categorias__item span,
-  .herramientas__item span {
-    font-size: 14px;
-  }
-  .banner {
-   
-    align-items: center;
-    height: 80px;
-    margin-left: 0;
-    padding: 4px;
-  }
-  .banner img {
-    width: 30%;
-  }
-  .banner span,
-  .banner p {
-    font-size: 16px;
-  }
-  .footer-top,
-  .footer-bottom,
-  .footer-end {
-    flex-direction: column;
-    padding: 8px;
-    font-size: 12px;
-  }
-  .footer-column {
-    min-width: 100px;
-    margin: 4px;
-  }
-  .social-images img,
-  .payment-icons img {
-    width: 40px;
-    height: 28px;
   }
 
-
+.herramientas{
+overflow-x: auto;
+ overflow-y: hidden;
+ gap:10px;
 
 }
-
-  
-
-
-  
-
 
 
 /* 2. Laptops y desktops medianos: de 900px a 1200px */
@@ -1239,5 +1103,9 @@ margin-left: 20px;
     width: 40px;
     height: 28px;
   }
+  .cart-text{
+  display: none;
+}
 
+}
 
